@@ -1,16 +1,16 @@
 # react-native-msal-module
 
 
-#MSAL authorization library for React Native
+# MSAL authorization library for React Native
 
 
 > Looking for the MSAL plugin for React Native, here you are
 
 Based on great plugin but deprecated [react-native-msal-plugin](https://github.com/rmcfarlane82/react-native-msal-plugin)
 
-##**Important!**
+## **Important!**
 
-###Package has been tested only on React Native 0.59.9. We need some time to check the package on the newest versions of React Native
+### Package has been tested only on React Native 0.59.9. We need some time to check the package on the newest versions of React Native
 
 Version 0.1.0
 
