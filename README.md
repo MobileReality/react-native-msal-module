@@ -216,4 +216,4 @@ It's unclear when official plugin will be released so for now:
 - [ ] Implement methods for [Single Account](https://docs.microsoft.com/pl-pl/azure/active-directory/develop/single-multi-account#single-account-scenario)
 
 ### License
-- See [LICENSE]()
+- See [LICENSE](https://github.com/MobileReality/react-native-msal-module/blob/master/LICENSE)
