@@ -5058,10 +5058,10 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-native-msal-module@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-msal-module/-/react-native-msal-module-0.1.0.tgz#533b9c46c1ee0e7c89cafaab574010314b599b3d"
-  integrity sha512-NeKRyzocYAjBmt+ObKNhEgATp2VsICJfe8iXvboVeeRTMMARy0xX4wKJRz0xnwuhcqg7zIxCnAWy/bKzVsUOBA==
+react-native-msal-module@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-msal-module/-/react-native-msal-module-0.1.1.tgz#3c1fe08a861b590eea6d2852cd01627fc0caac22"
+  integrity sha512-owH4NyjyMvpOmg4cGDq+UXABTMtPY8VS1sEEuAEO5qkGZNxJieB1UJcI+DSazNUmVxziVyBARl8+Jx2iWqxq+g==
 
 react-native@0.61.5:
   version "0.61.5"

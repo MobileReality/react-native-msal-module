@@ -14,9 +14,10 @@ import {
   View,
   Text,
   StatusBar,
+    TouchableHighlight,
 } from 'react-native';
 
-import * as MSAL from 'react-native-msal-module';
+import MSAL from 'react-native-msal-module';
 
 import {
   Header,
@@ -32,12 +33,15 @@ const scopes = ['https://fabrikamb2c.onmicrosoft.com/helloapi/demo.read'];
 const App: () => React$Node = () => {
   useEffect(() => {
     MSAL.init(CLIENT_ID);
-    async function login() {
+  }, []);
+  const login = async () => {
+    try {
       const resposne = await MSAL.acquireTokenAsync(scopes);
       console.log(resposne);
+    } catch (e) {
+      console.log(e);
     }
-    login();
-  }, []);
+  }
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -46,38 +50,10 @@ const App: () => React$Node = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+          <View>
+            <TouchableHighlight onPress={login}>
+              <Text>LOGIN</Text>
+            </TouchableHighlight>
           </View>
         </ScrollView>
       </SafeAreaView>
