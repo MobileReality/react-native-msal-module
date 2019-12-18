@@ -51,6 +51,15 @@ Setting the plugin requires adding proper properties in Info.plist and AppDelega
     2. Make suer you have done [iOS only steps](https://github.com/AzureAD/microsoft-authentication-library-for-objc#ios-only-steps) (**2 points**)
     3. Add code below to your `AppDelegate.m` (3rd point of [iOS only steps](https://github.com/AzureAD/microsoft-authentication-library-for-objc#ios-only-steps))
     ```
+    #import <React/RCTBridge.h>
+    #import <React/RCTBundleURLProvider.h>
+    #import <React/RCTRootView.h>
+  
+    #import <MSAL/MSAL.h> // <~ add this line(header file from MSAL)
+  
+  ...
+  
+  // this section, starting from here
    - (BOOL)application:(UIApplication *)application
                openURL:(NSURL *)url
                options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
@@ -58,6 +67,7 @@ Setting the plugin requires adding proper properties in Info.plist and AppDelega
        return [MSALPublicClientApplication handleMSALResponse:url
                                             sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
    }
+  // ending here
    ```
 
 That's all!

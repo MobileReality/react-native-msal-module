@@ -1,0 +1,5 @@
+{
+  "client_id" : "e760cab2-b9a1-4c0d-86fb-ff7084abd902",
+  "redirect_uri" : "msauth://com.example/YOUR_BASE64_SIGNATURE_ENCODED_URL",
+  "broker_redirect_uri_registered": true
+}
