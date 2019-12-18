@@ -192,7 +192,7 @@ public class RNMsalModuleModule extends ReactContextBaseJavaModule {
 
         WritableMap resultData = new WritableNativeMap();
         resultData.putString("accessToken", result.getAccessToken());
-        resultData.putString("idToken", "");
+        resultData.putString("idToken", result.getAccount().getIdToken());
         resultData.putString("userId", result.getAccount().getId());
         resultData.putString("expiresOn", String.format("%s", result.getExpiresOn().getTime()));
         resultData.putMap("userInfo", msalUserToDictionary(result.getAccount(), result.getTenantId()));

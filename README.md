@@ -11,8 +11,9 @@ Based on great plugin but deprecated [react-native-msal-plugin](https://github.c
 ## **Important!**
 
 ### Package has been tested only on React Native 0.59.9. We need some time to check the package on the newest versions of React Native
+<a href="https://www.npmjs.com/package/react-native-msal-module"><img src="https://img.shields.io/badge/version-0.1.2-brightgreen" alt="NPM version"></a>
+ <a href="/LICENSE"><img src="https://img.shields.io/badge/License-MIT-orange" alt="License"></a>
 
-Version 0.1.0
 
 Support
 
@@ -205,7 +206,7 @@ export class App extends React.Component {
 ---
 ### Known issues
 
-- idToken is currently unavailable in Android https://github.com/AzureAD/microsoft-authentication-library-for-android/issues/850
+~~- idToken is currently unavailable in Android https://github.com/AzureAD/microsoft-authentication-library-for-android/issues/850~~
 - Sometimes webview in iOS has refreshing loop
 
 ### Roadmap
