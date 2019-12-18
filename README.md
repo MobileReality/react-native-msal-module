@@ -10,14 +10,14 @@ Based on great plugin but deprecated [react-native-msal-plugin](https://github.c
 
 ## **Important!**
 
-### Package has been tested only on React Native 0.59.9. We need some time to check the package on the newest versions of React Native
-<a href="https://www.npmjs.com/package/react-native-msal-module"><img src="https://img.shields.io/badge/version-0.1.2-brightgreen" alt="NPM version"></a>
+### Package has been tested only on React Native 0.59.9 and 0.60+.
+<a href="https://www.npmjs.com/package/react-native-msal-module"><img src="https://img.shields.io/badge/version-0.1.3-brightgreen" alt="NPM version"></a>
  <a href="/LICENSE"><img src="https://img.shields.io/badge/License-MIT-orange" alt="License"></a>
 
 
 Support
 
-- React Native 0.59.9 and ealier versions, 0.60+ is planned for testing
+- React Native 0.59.9 and 0.60+ ✅
 - iOS 13 (tested) ✅
 - AndroidX (tested) ✅
 - Typescript ✅
@@ -103,6 +103,7 @@ First of all, according to the Android [documentation](https://github.com/AzureA
   
   include ':app'
   ```
+  **If your project is based on RN v0.60+ you can omit step below as you will overwrite already automatically linked package**  
   - in `[your-project]/android/app/src/main/java/com/[your-project]/MainApplication.java` add:
   ```
   package <YOUR_APP_PACKAGE>
@@ -214,16 +215,20 @@ export class App extends React.Component {
 ```
 
 ---
+### Example
+
+In project you can find sample implementation for both platforms(iOS and Android). Example is built with RN v0.61.5. **Example won't work** without changes in config files.
+
 ### Known issues
 
-~~- idToken is currently unavailable in Android https://github.com/AzureAD/microsoft-authentication-library-for-android/issues/850~~
+- ~~idToken is currently unavailable in Android https://github.com/AzureAD/microsoft-authentication-library-for-android/issues/850~~
 - Sometimes webview in iOS has refreshing loop
 
 ### Roadmap
 It's unclear when official plugin will be released so for now:
-- [ ] Test on newest React Native version
+- [x] ~~Test on newest React Native version~~
 - [ ] Write tests
-- [ ] Add example
+- [x] ~~Add example~~ 
 - [ ] Implement methods for [Single Account](https://docs.microsoft.com/pl-pl/azure/active-directory/develop/single-multi-account#single-account-scenario)
 
 ### License
